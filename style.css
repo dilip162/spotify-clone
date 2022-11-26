@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;500;600;700&family=Lato:ital,wght@0,300;0,400;1,300&family=Poppins:wght@300;400;500&family=Roboto+Flex:opsz,wght@8..144,300;8..144,400;8..144,500;8..144,600&family=Roboto:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    position: relative;
+    background-color: #1DB954;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul img {
+    width: 3.5rem;
+    margin: 7px;
+    cursor: pointer;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0 15px;
+    cursor: pointer;
+    transition: color 0.2s ease-in;
+}
+
+nav ul li:hover {
+    color: #1DB954;
+}
+
+.middle {
+    height: 100vh;
+    width: 75vw;
+    background-image: url(/bg.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    margin: auto;
+    margin-top: 15px;
+    color: white;
+    border-radius: 15px;
+}
+
+.middle h1 {
+    text-align: center;
+    font-weight: 400;
+    margin: 15px 0 20px -13.5rem;
+}
+
+.songList {
+    display: flex;
+    flex-direction: column;
+    margin-left: 4.5rem;
+}
+
+.song {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: whitesmoke;
+    width: 50%;
+    color: black;
+    padding: 4px 15px;
+    border-radius: 30px;
+    margin: 6px 80px;
+}
+
+.song img {
+    width: 2.4rem;
+    border-radius: 50%;
+
+}
+
+.songPlay {
+    background-color: black;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    position: fixed;
+    bottom: 2px;
+    padding: 15px 0;
+}
+
+.songPlay input {
+    width: 90%;
+    cursor: pointer;
+}
+
+.songName {
+    margin: 6px 0 6px -50px;
+}
+
+.plaingGif {
+    font-size: 1.2rem;
+    margin: 18px 4px;
+}
+
+.plaingGif img {
+    width: 50px;
+    margin: 0 8px;
+}
+
+.buttons i {
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 3px 8px;
+}
